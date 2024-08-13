@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/e219b7ca47.js" crossorigin="anonymous"></script>
   <title>Product-Landing-Page</title>
   </head>
 <body>
@@ -13,9 +14,9 @@
     </div>
     <nav id="nav-bar">
       <ul>
-        <li><a class="nav-link" href="#features">Features</a></li>
-        <li><a class="nav-link" href="#games">Games</a></li>
-        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link link__hover-effect link__hover-effect--red" href="#features">Features</a></li>
+        <li><a class="nav-link link__hover-effect link__hover-effect--red" href="#games">Games</a></li>
+        <li><a class="nav-link link__hover-effect link__hover-effect--red" href="#pricing">Pricing</a></li>
       </ul>
     </nav>
   </header>
@@ -25,18 +26,98 @@
       <h2>Best console of this generation to date</h2>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input name="email" type="email" id="email" placeholder="Enter your email address" required/>
-        <input id="submit" type="submit" class="btn" value="Order Now" />
+        <input id="submit" type="submit" value="Order Now" />
       </form>
     </div>
     <div class="container">
     <section id="features">
-      
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <div class="description">
+          <h2>Premium Materials</h2>
+          <p>The Switch uses the best technology which is sourced worldwide. This will increase the longevity of your purchase and improve processing power.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-solid fa-truck"></i>
+        </div>
+        <div class="description">
+          <h2>Fast Shipping</h2>
+          <p>We make sure you recieve your switch as soon as possible. We also provide free returns if you are not satisfied.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-solid fa-battery-full"></i>
+        </div>
+        <div class="description">
+          <h2>Quality Assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test each switch so that it is working correctly.</p>
+        </div>
+      </div>
     </section>
-    <section id="games"></section>
-    <section id="pricing"></section>
+    <section id="games">
+      <iframe id="video" src="https://www.youtube.com/embed/AGY1RA4cWPU?si=Yx1o_wf3omxByvUV" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product">
+        <div class="level">
+          Base Version
+        </div>
+        <h2>$300</h2>
+        <ul>
+          <li>6.2 inch led screen</li>
+          <li>Joycons</li>
+          <li>Doc system</li>
+          <li>Charger</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product">
+        <div class="level">
+          Oled Version
+        </div>
+        <h2>$350</h2>
+        <ul>
+          <li>7 inch led screen</li>
+          <li>Joycons</li>
+          <li>Doc system</li>
+          <li>Charger</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product">
+        <div class="level">
+          Accessories
+        </div>
+        <h2>$200</h2>
+        <ul>
+          <li>Screen Protector</li>
+          <li>2 Joycons</li>
+          <li>Switch Case</li>
+          <li>Games Case</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+    </section>
     </div>
   </main>
-  <section id="footer"></footer>
   </div>
+  <footer id="footer">
+    <div class="footer-logo">
+      <img src="https://i.pinimg.com/originals/56/2b/a7/562ba79d094ab3a812b9be3b930ca5bd.png" class="footer-img"/> 
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a class="nav-link link__hover-effect link__hover-effect--red" href="#features">Features</a></li>
+        <li><a class="nav-link link__hover-effect link__hover-effect--red" href="#games">Games</a></li>
+        <li><a class="nav-link link__hover-effect link__hover-effect--red" href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <span>@ Copyright 2024</span>
+  </footer>
 </body>
 </html>
